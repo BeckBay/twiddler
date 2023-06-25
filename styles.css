@@ -2,12 +2,89 @@
 html, body, #app {
   min-height: 100vh;
   margin: 0;
+  font-family: 'Ysabeau SC', sans-serif;
 }
 
 /* Continue building out the CSS styling for your Twiddler app below! We got you started by
 providing a space for you to apply styles to your app's outermost HTML element - the #app itself. */
 
 #app {
-  background-color: green;
-  color: yellow;
+  background-color: rgb(54, 53, 53);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+
+#feed {
+  border: thick double #ffffff;
+  border-radius: 10px;
+  background-color: rgb(151, 151, 151);
+  margin: 1% 20%;
+  padding: 5px;
+  width: 700px;
+}
+
+.tweet {
+  border: solid #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#update-feed {
+  height: 50px;
+  width: 200px;
+  color: rgb(84, 63, 94);
+  border-radius: 20px;
+  font-family: 'Ysabeau SC', sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px;
+}
+
+.profile-photo {
+  border-radius: 10px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: row-reverse;
+  color: rgb(255, 255, 255);
+  margin-right: auto;
+  background: linear-gradient(90deg, rgb(151, 151, 151), #454545);
+}
+
+i {
+  margin: 10px;
+  font-size: 25px;
+}
+
+.timestamp {
+  display: flex;
+	align-items: flex-end;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.message {
+  vertical-align: text-bottom;
+  padding-left: 15px;
+  color: rgb(21, 6, 35);
+  font-weight: bolder;
+}
+
+.username {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.userstuff {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(90deg, #454545, rgb(151, 151, 151))
+}
+
